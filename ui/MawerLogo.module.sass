@@ -1,0 +1,37 @@
+.MawerLogo
+  width: 3rem
+  height: 3rem
+  g
+    fill: var(--color-foreground)
+  path:nth-of-type(2),path:nth-of-type(3)
+    fill: #ff56a5
+    animation: blush 5s infinite
+  path:nth-of-type(4),path:nth-of-type(5)
+    transform-origin: 80rem 80rem
+    animation: blink 10s infinite
+
+@keyframes blush
+  0%
+    opacity: 1
+  25%
+    opacity: 0
+  50%
+    opacity: 1
+
+@keyframes blink
+  0%
+    transform: rotateX(0deg)
+  1%
+    transform: rotateX(80deg)
+  2%
+    transform: rotateX(0deg)
+  3%
+    transform: rotateX(80deg)
+  5%
+    transform: rotateX(0deg)
+  48%
+    transform: rotateX(0deg)
+  49%
+    transform: rotateX(80deg)
+  52%
+    transform: rotateX(0deg)

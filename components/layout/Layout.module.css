@@ -1,0 +1,16 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: fit-content(4rem) auto;
+  grid-template-areas: "header" "main"; }
+
+.header {
+  grid-area: header;
+  height: 4rem;
+  background: blue; }
+
+.main {
+  grid-area: main; }
+
+/*# sourceMappingURL=Layout.module.css.map */

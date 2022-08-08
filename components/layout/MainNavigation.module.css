@@ -1,0 +1,70 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.mainNavigation {
+  width: 100%;
+  position: fixed; }
+
+.topNavigation {
+  padding: 1rem 2rem;
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 3.75rem 0 rgba(0, 0, 0, 0.07);
+  z-index: 100;
+  background: white;
+  position: absolute; }
+  .topNavigation svg {
+    width: 3rem;
+    height: 3rem; }
+
+.navItem, .mobileNav li, .screenNav li {
+  margin: 0.5rem 0; }
+  .navItem a, .mobileNav li a, .screenNav li a {
+    text-decoration: none;
+    color: #9c9c9c;
+    display: block;
+    margin: 1rem 0;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold; }
+  .navItem:hover a, .mobileNav li:hover a, .screenNav li:hover a, .navItem:active a, .mobileNav li:active a, .screenNav li:active a {
+    color: green; }
+
+.mobileNav {
+  position: absolute;
+  z-index: 99;
+  list-style: none;
+  padding: 2rem;
+  background: black;
+  transition: all 0.3s ease-in-out;
+  transform-origin: top;
+  transform: translateY(-100%);
+  width: 100vw; }
+  @media (min-width: 42rem) {
+    .mobileNav {
+      display: none; } }
+  .mobileNav li {
+    border-bottom: 1px solid #242424; }
+    .mobileNav li a {
+      color: white; }
+
+.showMobileNav {
+  transform: translateY(4rem); }
+
+.screenNav {
+  list-style: none;
+  display: none;
+  align-items: center; }
+  @media (min-width: 42rem) {
+    .screenNav {
+      display: flex; } }
+  .screenNav li {
+    margin: 0 1rem; }
+
+/*# sourceMappingURL=MainNavigation.module.css.map */

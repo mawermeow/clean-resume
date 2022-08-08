@@ -1,0 +1,39 @@
+@import "../styles/varibles"
+
+.menuButton
+  cursor: pointer
+  height: 48px
+  position: relative
+  transition: 0.4s cubic-bezier(0, 0, 0, 1)
+  user-select: none
+  width: 48px
+  outline: none
+  transform: none
+  z-index: 200
+  @include media-screen()
+    display: none
+  > div
+    background: var(--color-foreground)
+    height: 3px
+    left: 9px
+    position: absolute
+    width: 30px
+    transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s
+
+.menuButtonActive
+  transform: rotate(-180deg)
+
+.menuButtonTop
+  top: 17px
+
+
+.menuButtonTopActive
+  transform: rotate(-45deg) translate(-4.26px, 4.26px)
+//background: white !important
+
+.menuButtonBottom
+  top: 29px
+
+.menuButtonBottomActive
+  transform: rotate(45deg) translate(-4.26px, -4.26px)
+//background: white !important
