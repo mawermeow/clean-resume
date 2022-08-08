@@ -4,10 +4,10 @@ import MawerLogo from "../../ui/MawerLogo";
 import MenuButton from "../../ui/MenuButton";
 
 const navItems = [
-    {title: "ABOUT ME", path: ''},
-    {title: "WORK & EDUCATION", path: ''},
-    {title: "LANGUAGE", path: ''},
-    {title: "INTERESTS", path: ''},
+    {title: "ABOUT ME", path: '/about-me'},
+    {title: "WORK & EDUCATION", path: 'work-education'},
+    {title: "LANGUAGE", path: 'language'},
+    {title: "INTERESTS", path: 'interests'},
 ]
 
 const MainNavigation: FC = () => {

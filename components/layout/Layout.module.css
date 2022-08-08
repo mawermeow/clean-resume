@@ -1,16 +1,81 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
 .layout {
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-rows: fit-content(4rem) auto;
-  grid-template-areas: "header" "main"; }
+  grid-template-areas: "navigation" "main"; }
 
-.header {
+.navigation {
   grid-area: header;
   height: 4rem;
-  background: blue; }
+  background: blue;
+  position: fixed;
+  z-index: 100; }
 
 .main {
-  grid-area: main; }
+  grid-area: main;
+  margin-top: 4rem; }
+
+.header {
+  min-height: 18rem; }
+  @media (min-width: 42rem) {
+    .header {
+      min-height: calc(100vh - 4rem); } }
+  .header .background {
+    background-image: url("/images/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    min-height: 22rem;
+    width: 100%;
+    z-index: -5;
+    transform: scale(0.8); }
+    @media (min-width: 42rem) {
+      .header .background {
+        min-height: calc(100vh - 4rem);
+        transform-origin: center;
+        transform: scale(1); } }
+  .header .title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    top: 9rem;
+    text-align: center; }
+    @media (min-width: 42rem) {
+      .header .title {
+        top: calc(50vh - 8rem);
+        flex-direction: column;
+        align-items: flex-start; } }
+    .header .title h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      z-index: 1;
+      margin: 0 2rem 0 2rem; }
+      @media (min-width: 42rem) {
+        .header .title h1 {
+          font-size: 5rem;
+          margin: 0 2rem 0 6rem; } }
+    .header .title span {
+      margin: 0 2rem 0 2rem; }
+      @media (min-width: 42rem) {
+        .header .title span {
+          margin: 0 2rem 0 6rem; } }
+
+.content {
+  width: 100%;
+  padding: 2.5rem 0;
+  height: 80rem;
+  background: green;
+  z-index: 1; }
 
 /*# sourceMappingURL=Layout.module.css.map */
