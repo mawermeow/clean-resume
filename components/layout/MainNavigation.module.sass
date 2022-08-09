@@ -4,7 +4,6 @@
   width: 100%
   position: fixed
 
-
 .topNavigation
   padding: 1rem 2rem
   height: 4rem
@@ -12,10 +11,13 @@
   display: flex
   justify-content: space-between
   align-items: center
-  box-shadow: 0 0 3.75rem 0 rgba(0, 0, 0, 0.07)
   z-index: 100
-  background: white
   position: absolute
+  background: white
+  &.shadow
+    box-shadow: 0 0 3.75rem 0 rgba(0, 0, 0, 0.07)
+  @include media-screen()
+    background: none
   svg
     width: 3rem
     height: 3rem
@@ -30,9 +32,14 @@
     font-size: 1rem
     transition: all 0.3s ease-in-out
     font-weight: bold
+    cursor: pointer
   &:hover,&:active
     a
       color: green
+.isWhite
+  color: white !important
+  &:hover,&:active
+    color: #c5c5c5 !important
 
 .mobileNav
   position: absolute
@@ -67,3 +74,10 @@
   li
     @extend .navItem
     margin: 0 1rem
+
+.navigationBackground
+  position: fixed
+  width: 100%
+  height: 4rem
+  background: white
+  z-index: -1

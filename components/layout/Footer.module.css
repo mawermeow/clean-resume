@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  height: 3rem;
+  background: var(--color-foreground);
+  color: var(--color-text-light);
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3rem; }
+
+/*# sourceMappingURL=Footer.module.css.map */

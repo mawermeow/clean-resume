@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,aAAa;EACX,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;;AAEf,eAAQ;EACN,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,uBAAuB;EACnC,qBAAE;IACA,SAAS,EAAE,MAAM;IACjB,UAAU,EAAE,MAAM;IAClB,aAAa,EAAE,IAAI;;AClBvB,KAAK;EAEH,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,4BAA4B",
+"sources": ["../../styles/_varibles.sass","Work.module.sass"],
+"names": [],
+"file": "Work.module.css"
+}

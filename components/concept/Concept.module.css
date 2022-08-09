@@ -1,0 +1,20 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.section, .target {
+  padding: 4rem 4rem;
+  background: var(--color-background); }
+  .section h1, .target h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+
+@media (min-width: 48rem) {
+  .target > div {
+    display: flex;
+    justify-content: space-around; } }
+
+/*# sourceMappingURL=Concept.module.css.map */

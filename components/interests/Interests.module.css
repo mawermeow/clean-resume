@@ -1,0 +1,42 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.section, .interests {
+  padding: 4rem 4rem;
+  background: var(--color-background); }
+  .section h1, .interests h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+
+.interests {
+  background: var(--color-background-dark); }
+  .interests > div {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 48rem) {
+      .interests > div {
+        flex-direction: row;
+        align-items: flex-start; } }
+    .interests > div .interestItem {
+      padding: 1.25rem 1rem; }
+      @media (min-width: 48rem) {
+        .interests > div .interestItem {
+          width: 25%; } }
+      .interests > div .interestItem svg {
+        height: 3.6rem;
+        width: 3.6rem;
+        fill: var(--color-icon); }
+      .interests > div .interestItem h5 {
+        margin: 0.75rem 0;
+        font-size: 12px; }
+      .interests > div .interestItem p {
+        line-height: 1.8;
+        color: var(--color-text-light);
+        margin: 0 0 1.25rem 0;
+        font-size: 13px; }
+
+/*# sourceMappingURL=Interests.module.css.map */

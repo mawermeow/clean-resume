@@ -1,0 +1,19 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.section, .work {
+  padding: 4rem 4rem;
+  background: var(--color-background); }
+  .section h1, .work h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+
+.work {
+  height: 60rem;
+  background: var(--color-background-dark); }
+
+/*# sourceMappingURL=Work.module.css.map */

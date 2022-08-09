@@ -1,0 +1,41 @@
+.outSideTargetCircle
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 2rem 0 4rem 0
+  span
+    font-size: .75rem
+    color: var(--color-text)
+    letter-spacing: 2.2px
+    text-transform: uppercase
+    margin-top: 2rem
+
+.targetCircle
+  display: flex
+  justify-content: center
+  align-items: center
+.progress
+  transform: rotate(-90deg)
+  stroke: var(--color-foreground)
+  circle
+    stroke-dashoffset: 0
+    stroke-width: 2%
+    fill: none
+  .bg
+    opacity: 0.1
+
+.insideCircle
+  position: absolute
+  border-radius: 100%
+  width: 3.5rem
+  height: 3.5rem
+  background-color: var(--color-foreground)
+
+.insideIcon
+  position: absolute
+  svg
+    fill: var(--color-background)
+    width: 2.5rem
+    height: 2.5rem
+    padding-top: 5px
+

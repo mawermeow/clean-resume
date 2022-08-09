@@ -1,0 +1,56 @@
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.section, .about {
+  padding: 4rem 4rem;
+  background: var(--color-background); }
+  .section h1, .about h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+
+.about {
+  width: 100%;
+  text-align: center; }
+  .about > div {
+    text-align: left;
+    display: block; }
+    @media (min-width: 48rem) {
+      .about > div {
+        display: flex;
+        justify-content: space-around; }
+        .about > div > div {
+          width: 30%; } }
+    .about > div img {
+      width: 100%; }
+    .about > div ul {
+      list-style: none;
+      padding-left: 1rem; }
+      @media (min-width: 48rem) {
+        .about > div ul {
+          padding-left: 0; } }
+      .about > div ul li {
+        margin-bottom: 1rem;
+        font-weight: 400; }
+        .about > div ul li svg {
+          vertical-align: bottom;
+          width: 1.5rem;
+          height: 1.5rem;
+          fill: var(--color-accent); }
+        .about > div ul li span {
+          display: inline-block;
+          padding-left: 0.5rem;
+          padding-bottom: 1px;
+          color: var(--color-text); }
+          .about > div ul li span a {
+            text-decoration: none;
+            font-family: inherit;
+            color: inherit;
+            transition: color 0.3s ease; }
+            .about > div ul li span a:hover, .about > div ul li span a:active {
+              color: var(--color-accent); }
+
+/*# sourceMappingURL=About.module.css.map */

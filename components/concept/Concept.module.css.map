@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,aAAa;EACX,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,WAAW;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;;AAEf,iBAAQ;EACN,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,uBAAuB;EACnC,uBAAE;IACA,SAAS,EAAE,MAAM;IACjB,UAAU,EAAE,MAAM;IAClB,aAAa,EAAE,IAAI;;AAnBrB,yBAA0B;ECGxB,aAAK;IACH,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,YAAY",
+"sources": ["../../styles/_varibles.sass","Concept.module.sass"],
+"names": [],
+"file": "Concept.module.css"
+}
