@@ -2,5 +2,84 @@
 
 .work
   @extend .section
-  height: 60rem
   background: var(--color-background-dark)
+
+.itemList
+  display: flex
+  flex-direction: column
+  align-items: center
+  list-style: none
+  padding: 0 1rem
+  margin: 0 auto
+  max-width: 540px
+  @include media-screen()
+    flex-direction: column
+    align-content: space-between
+    max-width: none
+  > li
+    margin-bottom: 3.2rem
+    @include media-screen()
+      padding: 1.5rem 0
+      &.right
+        margin: 0 auto 0 calc(50% - 1px)
+        border-left: 2px solid #eee
+        padding-left: 2rem
+      &.left
+        margin: 0 calc(50% - 1px) 0 auto
+        border-right: 2px solid #eee
+        padding-right: 2rem
+      &.extend
+        margin: 0
+        border-right: 2px solid #eee
+        padding: 1rem 0
+        &::before
+          display: none
+      &::before
+        content: " "
+        position: absolute
+        margin-top: 3rem
+        left: calc(50% - 3px)
+        margin-left: -10px
+        background-color: #fff
+        border: 3px solid #eee
+        height: 20px
+        width: 20px
+        border-radius: 100%
+
+
+.card
+  border: 1px solid #eee
+  width: 100%
+  border-radius: 3px
+  box-shadow: 0 0 4rem 0 var(--color-border)
+  transition: 0.2s linear
+
+
+.cardDescription
+  padding: 40px 45px
+  @include media-screen()
+    padding: 35px 30px
+  h5
+    margin: 0 0 0.6rem 0
+    font-weight: 700
+  h6
+    margin: 0 0 1rem 0
+    font-weight: 400
+    opacity: 0.7
+  ul
+    color: var(--color-text-light)
+    list-style: none
+    padding: 0
+    font-size: 13px
+    li
+      position: relative
+      padding-left: 1rem
+      &::after
+        content: " "
+        display: block
+        position: absolute
+        top: 6px
+        left: 0
+        width: 7px
+        height: 7px
+        background-color: var(--color-text-light)

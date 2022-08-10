@@ -12,8 +12,15 @@
       justify-content: space-around
       > div
         width: 30%
-    img
-      width: 100%
+    .imgRegion
+      max-width: 657px
+      //width: 100%
+      text-align: center
+      @include media-screen()
+        width: 30%
+      img
+        &:hover
+          content: url("/images/isme2.jpg")
     ul
       list-style: none
       padding-left: 1rem

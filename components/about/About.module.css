@@ -24,8 +24,14 @@
         justify-content: space-around; }
         .about > div > div {
           width: 30%; } }
-    .about > div img {
-      width: 100%; }
+    .about > div .imgRegion {
+      max-width: 657px;
+      text-align: center; }
+      @media (min-width: 48rem) {
+        .about > div .imgRegion {
+          width: 30%; } }
+      .about > div .imgRegion img:hover {
+        content: url("/images/isme2.jpg"); }
     .about > div ul {
       list-style: none;
       padding-left: 1rem; }

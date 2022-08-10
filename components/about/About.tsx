@@ -1,24 +1,25 @@
 import {FC} from 'react';
 import classes from "./About.module.css";
 import {MdOutlineEmail, MdOutlinePhoneIphone, MdLocationPin} from "react-icons/md";
-import {FaGraduationCap, FaLinkedinIn} from "react-icons/fa";
-import {motion} from "framer-motion";
+import {FaLinkedinIn} from "react-icons/fa";
 import ProgressItem from "./ProgressItem";
+import Image from "next/image";
 
-const About:FC = () =>{
+const About: FC = () => {
     return <div className={classes.about} id="about-me">
         <h1>Mawer Huang</h1>
         <div>
-            <div>
-                <img src="/images/me2.jpeg" alt=""/>
+
+            <div className={classes.imgRegion}>
+                <Image src="/images/isme.jpg" alt="" width={315} height={420}/>
             </div>
+
             <div className={classes.profile}>
                 <h5>Profile</h5>
                 <ul>
                     <li><MdOutlineEmail/> <span>huang@mawer.cc</span></li>
                     <li><MdOutlinePhoneIphone/> <span>+886-9-33843711</span></li>
                     <li><MdLocationPin/> <span>New Taipei, Taiwan</span></li>
-                    <li><FaGraduationCap/> <span>淡江大學 資訊傳播學系</span></li>
                     <li><FaLinkedinIn/> <span>
                         <a href="https://www.linkedin.com/in/mawer-huang-921a8a131/">LinkedIn</a>
                     </span></li>

@@ -34,6 +34,8 @@
   .topNavigation svg {
     width: 3rem;
     height: 3rem; }
+  .topNavigation .logo {
+    cursor: pointer; }
 
 .navItem, .mobileNav li, .screenNav li {
   margin: 0.5rem 0; }
