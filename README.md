@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">clean-resume</h1>
+<p align="center">
+    <img src="https://img.shields.io/badge/made_by-vercel-D75F5B.svg"/>
+    <img src="https://img.shields.io/badge/react-18.2.0-yellow.svg"/>
+    <img src="https://img.shields.io/badge/next.js-12.2.4-green.svg"/>
+    <img src="https://img.shields.io/github/languages/top/mawermeow/clean-resume?color=0075a2"/>
+    <img src="https://badges.frapsoft.com/os/v1/open-source.svg"/>
+</p>
 
-## Getting Started
+![](https://drive.google.com/uc?export=download&id=17x9UrpYsGglaZxksgKI_GF4MBAjMO3nt)
 
-First, run the development server:
+## Demo
+Live at https://clean-resume.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 關於此項目
+使用Next.js、TS與SASS設計的一頁式個人介紹網站，練習重點是切版與css動畫。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+主視覺素材來自[Unsplash](https://unsplash.com/)，寬螢幕版本的主圖會佔據所有視野，在進行任何Scroll後才會顯示導航欄的背景與下方陰影。
+點擊導航欄的按鈕後會滑動至該主題範圍，同時不會更改網址列。
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+個人資料模塊首次進入視野時，會由零開始填充技能熟悉度、首次進入工作與學歷模塊時，內容會逐一跳出，這些都是為了引導看者的注意力。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+寬螢幕版本設計了左右交替的時間線，和諧的同時保持了適合閱讀的文字寬度。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 項目外觀
 
-## Learn More
+### 寬螢幕版本
+![](https://drive.google.com/uc?export=download&id=1NMhvPcyWToxIUbVzMVCxRFbhs44_TMwr)
 
-To learn more about Next.js, take a look at the following resources:
+### 寬螢幕導航欄
+![](https://drive.google.com/uc?export=download&id=1ZZDjSnmxWpWepEGcVh6NQVaPLvBBwtN3)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 窄螢幕版本
+![](https://drive.google.com/uc?export=download&id=1AHxVgiqmMBoyyfysMeMLhvWL8cZSy_31)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 窄螢幕導航欄
+![](https://drive.google.com/uc?export=download&id=1tFncTStP6bbm66tqSK0anOgFD_pxIFYE)

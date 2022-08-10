@@ -35,7 +35,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
                         <h1>Mawer</h1>
                         <h1>Huang</h1>
                     </div>
-                    <h4>FULL STACK DEVELOPER</h4>
+                    <h4>FRONT END ENGINEER</h4>
                 </div>
             </section>
             <section className={classes.content}>

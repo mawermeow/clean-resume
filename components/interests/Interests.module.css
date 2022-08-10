@@ -5,12 +5,19 @@
   display: flex; }
 
 .section, .interests {
-  padding: 4rem 4rem;
+  padding: 2rem 1rem;
   background: var(--color-background); }
+  @media (min-width: 48rem) {
+    .section, .interests {
+      padding: 4rem 4rem; } }
   .section h1, .interests h1 {
-    font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 5rem; }
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 3rem; }
+    @media (min-width: 48rem) {
+      .section h1, .interests h1 {
+        margin-bottom: 5rem; } }
 
 .interests {
   background: var(--color-background-dark); }
